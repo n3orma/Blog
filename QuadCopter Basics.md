@@ -50,6 +50,9 @@ excerpt:
   
   <h7><a href="https://youtu.be/aRKlpoirrA4?si=WCc_Sf711W1uzRAS"> credit</a></h7>
 
+  <iframe width="560" height="315" src="https://youtu.be/aRKlpoirrA4?si=WCc_Sf711W1uzRAS" frameborder="0" allowfullscreen></iframe>
+
+
   Take the aircraft in the above clip, for example. It looks like it's just flying straight up by using a motor to push air  down, which lifts it up just like our stick example. But it's doing more than that. The motor gives it the power to fly, but it also has small moving parts that can change the direction of the force. By carefully changing this direction, the aircraft can move up, down, left, or right and even stay still in the air.
 
   So, while the basic idea is the same, real flying machines use smarter ways to stay balanced and go where they need to.
