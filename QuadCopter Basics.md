@@ -23,7 +23,7 @@ excerpt:
    
   When you spin the toy by rubbing the stick quickly between your hands, the rotor (the propeller part) starts spinning fast. This spinning pushes air downward. just like how you feel a push in the opposite direction when you push something  the toy feels a push upward. This is called thrust. If this upward thrust is stronger than the toy’s weight (which pulls it down), the toy lifts off the ground and flies into the air.
   
-  <img src="/static/Drangon Fly Toy.png" alt="Thumbnail" class="blog-image">
+  <img src="Thumbnail.png" alt="Thumbnail" class="blog-image">
 
   <p style="color: #66ccff;"> <b> Visualizing Thrust and Rotation </b></p>
 
