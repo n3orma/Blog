@@ -18,10 +18,10 @@ main {
   --color-fg-default: #f8fafc;
   --color-fg-muted: #94a3b8;
   --color-fg-subtle: #64748b;
-  --color-canvas-default: #0f172a;
-  --color-canvas-overlay: #1e293b;
-  --color-border-default: #334155;
-  --color-border-muted: #1e293b;
+  --color-canvas-default: #0b1120;
+  --color-canvas-overlay: #161e2e;
+  --color-border-default: #1e293b;
+  --color-border-muted: #0f172a;
   --color-border-subtle: rgba(255, 255, 255, 0.1);
   --color-shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.5);
 
