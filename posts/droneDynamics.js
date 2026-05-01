@@ -19,7 +19,7 @@ export const droneDynamicsPost = {
     category: "Technical",
     excerpt: "Have you ever played with a spinning dragonfly toy? What seems like a simple childhood game actually reveals the fundamental physics behind modern drone flight — from thrust and torque to quadcopter control.",
     coverImage: droneDragonflyImage,
-    disableLink: true,
+    disableLink: false,
     content: [
         // ── Introduction ──
         {
