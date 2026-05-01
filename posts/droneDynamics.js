@@ -17,7 +17,7 @@ export const droneDynamicsPost = {
     date: "April 2026",
     author: "Edge Robotics Studio",
     category: "Technical",
-    excerpt: "Have you ever played with a spinning dragonfly toy? What seems like a simple childhood game actually reveals the fundamental physics behind modern drone flight — from thrust and torque to quadcopter control.",
+    excerpt: "Have you ever played with a spinning dragonfly toy? What seems like a simple childhood game actually reveals the fundamental physics behind modern drone flight",
     coverImage: droneDragonflyImage,
     disableLink: true,
     hideComingSoon: true,
