@@ -19,8 +19,7 @@ export const droneDynamicsPost = {
     category: "Technical",
     excerpt: "Have you ever played with a spinning dragonfly toy? What seems like a simple childhood game actually reveals the fundamental physics behind modern drone flight",
     coverImage: droneDragonflyImage,
-    disableLink: true,
-    hideComingSoon: true,
+    disableLink: false,
     content: [
         // ── Introduction ──
         {
@@ -134,7 +133,7 @@ export const droneDynamicsPost = {
         },
         {
             type: "paragraph",
-            text: "Now things get more interesting when we change the speed of one motor. If one motor spins faster than the other, it produces more thrust on that side. This causes the stick to tilt. Once it tilts, the thrust is no longer pointing straight up — it is slightly angled. This angled thrust creates movement in a direction."
+            text: "Now things get more interesting when we change the speed of one motor. If one motor spins faster than the other, it produces more thrust on that side. This causes the stick to tilt. Once it tilts, the thrust is no longer pointing straight up; it is slightly angled. This angled thrust creates movement in a direction."
         },
         {
             type: "paragraph",
@@ -144,7 +143,7 @@ export const droneDynamicsPost = {
         // ── Section 6: Real-World Example – Chinook ──
         {
             type: "heading",
-            text: "Real-World Example — The Boeing CH-47 Chinook"
+            text: "Real-World Example: The Boeing CH-47 Chinook"
         },
         {
             type: "paragraph",
@@ -162,7 +161,7 @@ export const droneDynamicsPost = {
         // ── Section 7: Tricopter ──
         {
             type: "heading",
-            text: "Three Motors — The Tricopter"
+            text: "Three Motors: The Tricopter"
         },
         {
             type: "paragraph",
@@ -181,7 +180,7 @@ export const droneDynamicsPost = {
         // ── Section 8: Quadcopter ──
         {
             type: "heading",
-            text: "Four Motors — The Quadcopter"
+            text: "Four Motors: The Quadcopter"
         },
         {
             type: "paragraph",
@@ -190,7 +189,7 @@ export const droneDynamicsPost = {
         {
             type: "diagram",
             component: QuadcopterDiagram,
-            caption: "A quadcopter — four rotors in an X configuration with alternating CW/CCW rotation"
+            caption: "A quadcopter: four rotors in an X configuration with alternating CW/CCW rotation"
         },
         {
             type: "paragraph",
@@ -200,7 +199,7 @@ export const droneDynamicsPost = {
         // ── Section 9: Degrees of Freedom ──
         {
             type: "heading",
-            text: "Degrees of Freedom — Moving in Every Direction"
+            text: "Degrees of Freedom: Moving in Every Direction"
         },
         {
             type: "paragraph",
@@ -209,13 +208,13 @@ export const droneDynamicsPost = {
         {
             type: "diagram",
             component: DegreesOfFreedomDiagram,
-            caption: "Six degrees of freedom — Throttle, Roll, Pitch, and Yaw give full spatial control"
+            caption: "Six degrees of freedom: Throttle, Roll, Pitch, and Yaw give full spatial control"
         },
 
         // ── Section 10: Beyond Quadcopters ──
         {
             type: "heading",
-            text: "Beyond Quadcopters — Hexacopters and Octocopters"
+            text: "Beyond Quadcopters: Hexacopters and Octocopters"
         },
         {
             type: "paragraph",
@@ -225,7 +224,7 @@ export const droneDynamicsPost = {
         // ── Conclusion ──
         {
             type: "heading",
-            text: "Conclusion — From Toys to Flight"
+            text: "Conclusion: From Toys to Flight"
         },
         {
             type: "paragraph",
@@ -237,7 +236,7 @@ export const droneDynamicsPost = {
         },
         {
             type: "callout",
-            text: "And once you understand these, flight no longer feels like magic — it becomes something you can clearly see, explain, and even build."
+            text: "And once you understand these, flight no longer feels like magic; it becomes something you can clearly see, explain, and even build."
         }
     ]
 };

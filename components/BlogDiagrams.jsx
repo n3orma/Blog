@@ -1,7 +1,7 @@
 // SVG Diagram components for "From Dragonfly Toys to Drone Dynamics" blog post
 
 export const NewtonThirdLawDiagram = () => (
-    <svg viewBox="0 35 600 330" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
+    <svg viewBox="0 0 600 420" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
         {/* Grid lines */}
         {[...Array(20)].map((_, i) => (
             <line key={`gv-${i}`} x1={i * 30} y1="0" x2={i * 30} y2="420" stroke="#334155" strokeWidth="0.5" opacity="0.3" />
@@ -52,14 +52,14 @@ export const NewtonThirdLawDiagram = () => (
         */}
 
         <defs>
-            <marker id="nl-arrowBlue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#60a5fa" />
+            <marker id="nl-arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#60a5fa" />
             </marker>
-            <marker id="nl-arrowRed" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#ef4444" />
+            <marker id="nl-arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
             </marker>
-            <marker id="nl-arrowOrange" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#22c55e" />
+            <marker id="nl-arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
             </marker>
         </defs>
     </svg>
@@ -109,18 +109,18 @@ export const HoverBalanceDiagram = () => (
         <text x="300" y="355" textAnchor="middle" fill="#4ade80" fontSize="16" fontWeight="bold" fontFamily="sans-serif">HOVER ✓</text>
 
         <defs>
-            <marker id="hb-arrowGreen" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#22c55e" />
+            <marker id="hb-arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
             </marker>
-            <marker id="hb-arrowRed" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#ef4444" />
+            <marker id="hb-arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
             </marker>
         </defs>
     </svg>
 );
 
 export const TorqueOffsetDiagram = () => (
-    <svg viewBox="0 45 600 350" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
+    <svg viewBox="0 0 600 420" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
         {[...Array(20)].map((_, i) => (
             <line key={`g-${i}`} x1={i * 30} y1="0" x2={i * 30} y2="420" stroke="#334155" strokeWidth="0.5" opacity="0.3" />
         ))}
@@ -177,26 +177,33 @@ export const TorqueOffsetDiagram = () => (
         <rect x="120" y="170" width="80" height="28" rx="6" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" strokeWidth="1" />
         <text x="160" y="189" textAnchor="middle" fill="#fbbf24" fontSize="13" fontWeight="bold" fontFamily="sans-serif">T = F × d</text>
 
+
+
         {/* Unstable label */}
         <rect x="90" y="365" width="420" height="34" rx="17" fill="#f43f5e" opacity="0.12" stroke="#f43f5e" strokeWidth="1" />
         <text x="300" y="387" textAnchor="middle" fill="#fb7185" fontSize="12" fontWeight="bold" fontFamily="sans-serif">⚠ Off-center force creates rotation making the system UNSTABLE</text>
 
         <defs>
-            <marker id="to-arrowOr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#f97316" />
+            <marker id="to-arrowOr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#f97316" />
             </marker>
-            <marker id="to-arrowPink" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#38bdf8" />
+            <marker id="to-arrowPink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
             </marker>
-            <marker id="to-arrowR2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#ef4444" />
+            <marker id="to-arrowR2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
             </marker>
         </defs>
     </svg>
 );
 
 export const DualMotorDiagram = () => (
-    <svg viewBox="0 65 600 325" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
+    <svg
+        viewBox="0 0 600 420"
+        className="w-full"
+        style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}
+    >
+        {/* Grid */}
         {[...Array(20)].map((_, i) => (
             <line key={`g-${i}`} x1={i * 30} y1="0" x2={i * 30} y2="420" stroke="#334155" strokeWidth="0.5" opacity="0.3" />
         ))}
@@ -207,59 +214,61 @@ export const DualMotorDiagram = () => (
         {/* Beam */}
         <rect x="120" y="210" width="360" height="10" rx="3" fill="#64748b" />
 
-        {/* Left Motor body */}
+        {/* Left Motor */}
         <rect x="130" y="185" width="35" height="28" rx="5" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
         <ellipse cx="148" cy="180" rx="50" ry="5" fill="#38bdf8" opacity="0.6" />
         <circle cx="148" cy="180" r="4" fill="#475569" />
 
-        {/* Right Motor body */}
+        {/* Right Motor */}
         <rect x="435" y="185" width="35" height="28" rx="5" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
         <ellipse cx="452" cy="180" rx="50" ry="5" fill="#38bdf8" opacity="0.6" />
         <circle cx="452" cy="180" r="4" fill="#475569" />
 
-        {/* Left rotation arc (CW) — perfectly circular arc */}
-        <path d="M 110 162 A 38 38 0 0 1 186 162" fill="none" stroke="#a78bfa" strokeWidth="2.5" markerEnd="url(#dm-arrowPurple)" />
-        <text x="130" y="115" textAnchor="end" fill="#c4b5fd" fontSize="11" fontWeight="bold" fontFamily="sans-serif">CW ↻</text>
+        {/* LEFT LOOP (CW) — Full planar ellipse style, arrowhead at front */}
+        <path d="M 170 160 a 55 20 1 1 0 -40 0" fill="none" stroke="#a78bfa" strokeWidth="3" markerEnd="url(#dm-arrowPurple)" opacity="0.85" />
+        <text x="50" y="145" fill="#c4b5fd" fontSize="13" fontWeight="bold" fontFamily="sans-serif">CW</text>
 
-        {/* Right rotation arc (CCW) — perfectly circular arc */}
-        <path d="M 490 162 A 38 38 0 0 0 414 162" fill="none" stroke="#2dd4bf" strokeWidth="2.5" markerEnd="url(#dm-arrowTeal)" />
-        <text x="470" y="115" textAnchor="start" fill="#5eead4" fontSize="11" fontWeight="bold" fontFamily="sans-serif">CCW ↺</text>
+        {/* RIGHT LOOP (CCW) — Full planar ellipse style, arrowhead at front */}
+        <path d="M 435 160 a 55 20 1 1 1 40 0" fill="none" stroke="#2dd4bf" strokeWidth="3" markerEnd="url(#dm-arrowTeal)" opacity="0.85" />
+        <text x="530" y="145" fill="#5eead4" fontSize="13" fontWeight="bold" fontFamily="sans-serif">CCW</text>
 
-        {/* Thrust arrows */}
-        <line x1="148" y1="168" x2="148" y2="90" stroke="#22c55e" strokeWidth="3" markerEnd="url(#dm-arrowG2)" />
-        <line x1="452" y1="168" x2="452" y2="90" stroke="#22c55e" strokeWidth="3" markerEnd="url(#dm-arrowG2)" />
-        <line x1="148" y1="168" x2="148" y2="90" stroke="#22c55e" strokeWidth="12" opacity="0.08" />
-        <line x1="452" y1="168" x2="452" y2="90" stroke="#22c55e" strokeWidth="12" opacity="0.08" />
+        {/* Thrust arrows — Refined with markers */}
+        <line x1="148" y1="168" x2="148" y2="80" stroke="#22c55e" strokeWidth="3.5" markerEnd="url(#dm-arrowG2)" />
+        <line x1="452" y1="168" x2="452" y2="80" stroke="#22c55e" strokeWidth="3.5" markerEnd="url(#dm-arrowG2)" />
+        <line x1="148" y1="168" x2="148" y2="85" stroke="#22c55e" strokeWidth="12" opacity="0.1" />
+        <line x1="452" y1="168" x2="452" y2="85" stroke="#22c55e" strokeWidth="12" opacity="0.1" />
 
-        {/* Thrust labels */}
-        <text x="148" y="78" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Thrust</text>
-        <text x="452" y="78" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Thrust</text>
+        <text x="148" y="70" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Thrust</text>
+        <text x="452" y="70" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Thrust</text>
 
         {/* Center of mass dot + label */}
         <circle cx="300" cy="215" r="6" fill="#fbbf24" />
         <text x="300" y="200" textAnchor="middle" fill="#fbbf24" fontSize="10" fontFamily="sans-serif">Center of Mass</text>
 
         {/* Weight arrow DOWN */}
-        <line x1="300" y1="230" x2="300" y2="330" stroke="#ef4444" strokeWidth="4" markerEnd="url(#hb-arrowRed)" />
-        <line x1="300" y1="330" x2="300" y2="300" stroke="#ef4444" strokeWidth="14" opacity="0.1" />
+        <line x1="300" y1="230" x2="300" y2="340" stroke="#ef4444" strokeWidth="4" markerEnd="url(#hb-arrowRed)" />
+        <line x1="300" y1="230" x2="300" y2="340" stroke="#ef4444" strokeWidth="14" opacity="0.1" />
 
         {/* Weight label - right of arrow */}
-        <text x="330" y="265" fill="#f87171" fontSize="14" fontWeight="bold" fontFamily="sans-serif">Weight (W)</text>
-        <text x="345" y="281" fill="#f87171" fontSize="11" fontFamily="sans-serif">(Gravity)</text>
+        <text x="330" y="275" fill="#f87171" fontSize="14" fontWeight="bold" fontFamily="sans-serif">Weight (W)</text>
+        <text x="345" y="291" fill="#f87171" fontSize="11" fontFamily="sans-serif">(Gravity)</text>
 
         {/* Stable hover badge */}
-        <rect x="185" y="345" width="230" height="40" rx="20" fill="#22c55e" opacity="0.12" stroke="#22c55e" strokeWidth="1.5" />
-        <text x="300" y="370" textAnchor="middle" fill="#4ade80" fontSize="16" fontWeight="bold" fontFamily="sans-serif">STABLE HOVER ✓</text>
+        <rect x="185" y="360" width="230" height="40" rx="20" fill="#22c55e" opacity="0.12" stroke="#22c55e" strokeWidth="1.5" />
+        <text x="300" y="385" textAnchor="middle" fill="#4ade80" fontSize="16" fontWeight="bold" fontFamily="sans-serif">STABLE HOVER ✓</text>
 
         <defs>
-            <marker id="dm-arrowPurple" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#a78bfa" />
+            <marker id="dm-arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa" />
             </marker>
-            <marker id="dm-arrowTeal" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#2dd4bf" />
+            <marker id="dm-arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf" />
             </marker>
-            <marker id="dm-arrowG2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#22c55e" />
+            <marker id="dm-arrowG2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
+            </marker>
+            <marker id="hb-arrowRed" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
             </marker>
         </defs>
     </svg>
@@ -275,7 +284,7 @@ export const QuadcopterDiagram = () => (
         ))}
 
         {/* FRONT label */}
-        <text x="300" y="52" textAnchor="middle" fill="#94a3b8" fontSize="12" fontFamily="sans-serif">↑ FRONT</text>
+        <text x="300" y="80" textAnchor="middle" fill="#94a3b8" fontSize="12" fontFamily="sans-serif">FRONT ↑</text>
 
         {/* Arms - X configuration */}
         <line x1="195" y1="155" x2="405" y2="345" stroke="#475569" strokeWidth="6" strokeLinecap="round" />
@@ -286,49 +295,49 @@ export const QuadcopterDiagram = () => (
         <circle cx="300" cy="250" r="10" fill="#0ea5e9" opacity="0.6" />
 
         {/* Motor 1 - Front Left (CW - top arc) */}
-        <circle cx="195" cy="155" r="38" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.4" />
+        <circle cx="195" cy="155" r="38" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.5" />
         <circle cx="195" cy="155" r="8" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
-        <path d="M 162 136 A 38 38 0 0 1 228 136" fill="none" stroke="#a78bfa" strokeWidth="2.2" markerEnd="url(#aq-P)" opacity="0.9" />
-        <text x="175" y="105" textAnchor="end" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M1</text>
-        <text x="175" y="117" textAnchor="end" fill="#c4b5fd" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CW ↻</text>
-        <line x1="195" y1="135" x2="195" y2="40" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#aq-G)" />
+        <path d="M 162 136 A 38 38 0 0 1 228 136" fill="none" stroke="#a78bfa" strokeWidth="2" markerEnd="url(#aq-P)" />
+        <text x="125" y="155" textAnchor="end" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M1</text>
+        <text x="130" y="170" textAnchor="end" fill="#c4b5fd" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CW ↻</text>
+        <line x1="195" y1="135" x2="195" y2="80" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#aq-G)" />
 
         {/* Motor 2 - Front Right (CCW - top arc) */}
-        <circle cx="405" cy="155" r="38" fill="none" stroke="#2dd4bf" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.4" />
+        <circle cx="405" cy="155" r="38" fill="none" stroke="#2dd4bf" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.5" />
         <circle cx="405" cy="155" r="8" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
-        <path d="M 438 136 A 38 38 0 0 0 372 136" fill="none" stroke="#2dd4bf" strokeWidth="2.2" markerEnd="url(#aq-T)" opacity="0.9" />
-        <text x="425" y="105" textAnchor="start" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M2</text>
-        <text x="425" y="117" textAnchor="start" fill="#5eead4" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CCW ↺</text>
-        <line x1="405" y1="135" x2="405" y2="40" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#aq-G)" />
+        <path d="M 438 136 A 38 38 0 0 0 372 136" fill="none" stroke="#2dd4bf" strokeWidth="2" markerEnd="url(#aq-T)" />
+        <text x="470" y="155" textAnchor="start" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M2</text>
+        <text x="460" y="170" textAnchor="start" fill="#5eead4" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CCW ↺</text>
+        <line x1="405" y1="135" x2="405" y2="80" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#aq-G)" />
 
-        {/* Motor 3 - Rear Left (CCW - top arc for consistency) */}
-        <circle cx="195" cy="345" r="38" fill="none" stroke="#2dd4bf" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.4" />
+        {/* Motor 3 - Rear Left (CCW - bottom arc) */}
+        <circle cx="195" cy="345" r="38" fill="none" stroke="#2dd4bf" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.5" />
         <circle cx="195" cy="345" r="8" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
-        <path d="M 228 326 A 38 38 0 0 0 162 326" fill="none" stroke="#2dd4bf" strokeWidth="2.2" markerEnd="url(#aq-T)" opacity="0.9" />
-        <text x="245" y="415" textAnchor="start" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M3</text>
-        <text x="245" y="427" textAnchor="start" fill="#5eead4" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CCW ↺</text>
+        <path d="M 162 364 A 38 38 0 0 0 228 364" fill="none" stroke="#2dd4bf" strokeWidth="2" markerEnd="url(#aq-T)" />
+        <text x="110" y="345" textAnchor="start" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M3</text>
+        <text x="100" y="360" textAnchor="start" fill="#5eead4" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CCW ↺</text>
         <line x1="195" y1="325" x2="195" y2="272" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#aq-G)" />
 
-        {/* Motor 4 - Rear Right (CW - top arc for consistency) */}
-        <circle cx="405" cy="345" r="38" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.4" />
+        {/* Motor 4 - Rear Right (CW - bottom arc) */}
+        <circle cx="405" cy="345" r="38" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.5" />
         <circle cx="405" cy="345" r="8" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
-        <path d="M 372 326 A 38 38 0 0 1 438 326" fill="none" stroke="#a78bfa" strokeWidth="2.2" markerEnd="url(#aq-P)" opacity="0.9" />
-        <text x="345" y="415" textAnchor="end" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M4</text>
-        <text x="345" y="427" textAnchor="end" fill="#c4b5fd" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CW ↻</text>
+        <path d="M 438 364 A 38 38 0 0 1 372 364" fill="none" stroke="#a78bfa" strokeWidth="2" markerEnd="url(#aq-P)" />
+        <text x="482" y="345" textAnchor="end" fill="#4ade80" fontSize="10" fontWeight="bold" fontFamily="sans-serif">M4</text>
+        <text x="488" y="360" textAnchor="end" fill="#c4b5fd" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CW ↻</text>
         <line x1="405" y1="325" x2="405" y2="272" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#aq-G)" />
 
         {/* REAR label — moved down to clear M3/M4 labels */}
-        <text x="300" y="450" textAnchor="middle" fill="#94a3b8" fontSize="12" fontFamily="sans-serif">REAR ↓</text>
+        <text x="300" y="420" textAnchor="middle" fill="#94a3b8" fontSize="12" fontFamily="sans-serif">REAR ↓</text>
 
         <defs>
-            <marker id="aq-P" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#a78bfa" />
+            <marker id="aq-P" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa" />
             </marker>
-            <marker id="aq-T" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#2dd4bf" />
+            <marker id="aq-T" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf" />
             </marker>
-            <marker id="aq-G" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#22c55e" />
+            <marker id="aq-G" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
             </marker>
         </defs>
     </svg>
@@ -343,9 +352,6 @@ export const TriCopterDiagram = () => (
             <line key={`gh-${i}`} x1="0" y1={i * 30} x2="600" y2={i * 30} stroke="#334155" strokeWidth="0.5" opacity="0.3" />
         ))}
 
-        {/* Title */}
-        <text x="300" y="28" textAnchor="middle" fill="#7dd3fc" fontSize="15" fontWeight="bold" fontFamily="sans-serif">TRICOPTER — Y-Frame Configuration</text>
-
         {/* Y-Frame arms */}
         <line x1="300" y1="240" x2="160" y2="140" stroke="#475569" strokeWidth="6" strokeLinecap="round" />
         <line x1="300" y1="240" x2="440" y2="140" stroke="#475569" strokeWidth="6" strokeLinecap="round" />
@@ -355,7 +361,7 @@ export const TriCopterDiagram = () => (
         <circle cx="300" cy="240" r="16" fill="#334155" stroke="#64748b" strokeWidth="2" />
         <circle cx="300" cy="240" r="6" fill="#0ea5e9" opacity="0.6" />
         {/* FRONT indicator — placed outside hub, clearly below */}
-        <text x="300" y="100" textAnchor="middle" fill="#64748b" fontSize="9" fontFamily="sans-serif">← FRONT ↑ →</text>
+        <text x="300" y="100" textAnchor="middle" fill="#94a3b8" fontSize="12" fontFamily="sans-serif">FRONT ↑</text>
 
         {/* ── Motor 1 – Front Left (CW - top arc) ── */}
         <circle cx="160" cy="140" r="36" fill="none" stroke="#a78bfa" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.5" />
@@ -376,88 +382,85 @@ export const TriCopterDiagram = () => (
         {/* ── Motor 3 – Tail (CW - bottom arc) ── */}
         <circle cx="300" cy="360" r="36" fill="none" stroke="#f97316" strokeWidth="1.5" strokeDasharray="4,3" opacity="0.5" />
 
-
-
         <circle cx="300" cy="360" r="7" fill="#475569" stroke="#94a3b8" strokeWidth="1.5" />
         <path d="M 331 378 A 36 36 0 0 1 269 378" fill="none" stroke="#a78bfa" strokeWidth="2" markerEnd="url(#tr-P)" />
         <text x="210" y="380" textAnchor="end" fill="#c4b5fd" fontSize="10" fontWeight="bold" fontFamily="sans-serif">CW ↻</text>
         <text x="230" y="360" textAnchor="end" fill="#4ade80" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Motor 3 (Tail)</text>
 
         {/* Servo Tilt Indicator */}
-        <path d="M 260 335 Q 300 315 340 335" fill="none" stroke="#fbbf24" strokeWidth="2" markerStart="url(#tr-O)" markerEnd="url(#tr-O)" opacity="0.8" />
+        <path d="M 257 335 Q 300 290 343 335" fill="none" stroke="#fbbf24" strokeWidth="2" markerStart="url(#tr-O)" markerEnd="url(#tr-O)" opacity="0.8" />
         <text x="365" y="325" textAnchor="start" fill="#fbbf24" fontSize="9" fontWeight="bold" fontFamily="sans-serif">Tilt Control</text>
 
         <line x1="300" y1="353" x2="300" y2="280" stroke="#22c55e" strokeWidth="2.5" markerEnd="url(#tr-G)" />
 
 
         <defs>
-            <marker id="tr-P" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#a78bfa" />
+            <marker id="tr-P" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a78bfa" />
             </marker>
-            <marker id="tr-T" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#2dd4bf" />
+            <marker id="tr-T" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf" />
             </marker>
-            <marker id="tr-O" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#fdba74" />
+            <marker id="tr-O" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#fdba74" />
             </marker>
-            <marker id="tr-G" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#22c55e" />
+            <marker id="tr-G" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
             </marker>
         </defs>
     </svg>
 );
 
 export const DegreesOfFreedomDiagram = () => (
-    <svg viewBox="100 20 500 385" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
-        {/* Title */}
-        <text x="350" y="32" textAnchor="middle" fill="#e2e8f0" fontSize="16" fontWeight="bold" fontFamily="sans-serif">6 Degrees of Freedom (6-DOF)</text>
+    <svg viewBox="0 0 700 450" className="w-full" style={{ background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)" }}>
 
         {/* ── Central drone body ── */}
         <rect x="315" y="220" width="70" height="28" rx="8" fill="#334155" stroke="#64748b" strokeWidth="2" />
         <circle cx="350" cy="234" r="7" fill="#0ea5e9" opacity="0.7" />
 
-        {/* ── HEAVE ── */}
-        <line x1="350" y1="215" x2="350" y2="120" stroke="#22c55e" strokeWidth="3" markerEnd="url(#df-G)" />
-        <line x1="350" y1="252" x2="350" y2="350" stroke="#22c55e" strokeWidth="3" markerEnd="url(#df-G)" />
-        <text x="350" y="108" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Heave (UP)</text>
-        <text x="350" y="366" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Heave (DOWN)</text>
+        {/* ── HEAVE ──  */}
+
+        <line x1="350" y1="215" x2="350" y2="50" stroke="#22c55e" strokeWidth="3" strokeDasharray="6,3" markerEnd="url(#df-G)" />
+        <line x1="350" y1="252" x2="350" y2="400" stroke="#22c55e" strokeWidth="3" strokeDasharray="6,3" markerEnd="url(#df-G)" />
+        <text x="350" y="40" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Heave (UP)</text>
+        <text x="350" y="420" textAnchor="middle" fill="#4ade80" fontSize="12" fontWeight="bold" fontFamily="sans-serif">Heave (DOWN)</text>
 
         {/* ── SWAY ── */}
-        <line x1="310" y1="234" x2="175" y2="234" stroke="#38bdf8" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-B)" />
-        <line x1="390" y1="234" x2="555" y2="234" stroke="#38bdf8" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-B)" />
-        <text x="165" y="238" textAnchor="end" fill="#7dd3fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Sway (LEFT)</text>
-        <text x="565" y="238" textAnchor="start" fill="#7dd3fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Sway (RIGHT)</text>
+        <line x1="310" y1="234" x2="140" y2="234" stroke="#38bdf8" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-B)" />
+        <line x1="390" y1="234" x2="575" y2="234" stroke="#38bdf8" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-B)" />
+        <text x="125" y="238" textAnchor="end" fill="#7dd3fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Sway (LEFT)</text>
+        <text x="585" y="238" textAnchor="start" fill="#7dd3fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Sway (RIGHT)</text>
 
         {/* ── SURGE ── */}
-        <line x1="362" y1="220" x2="440" y2="148" stroke="#f97316" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-O)" />
-        <line x1="338" y1="248" x2="260" y2="320" stroke="#f97316" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-O)" />
-        <text x="462" y="140" textAnchor="start" fill="#fdba74" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Surge (FWD)</text>
-        <text x="245" y="335" textAnchor="end" fill="#fdba74" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Surge (BACK)</text>
+        <line x1="362" y1="220" x2="500" y2="68" stroke="#f97316" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-O)" />
+        <line x1="338" y1="248" x2="200" y2="400" stroke="#f97316" strokeWidth="2.5" strokeDasharray="6,3" markerEnd="url(#df-O)" />
+        <text x="480" y="50" textAnchor="start" fill="#fdba74" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Surge (FWD)</text>
+        <text x="220" y="430" textAnchor="end" fill="#fdba74" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Surge (BACK)</text>
 
         {/* ── ROLL ── */}
-        <path d="M 290 215 A 24 24 0 0 1 290 253" fill="none" stroke="#38bdf8" strokeWidth="2.5" markerEnd="url(#df-B)" />
-        <text x="255" y="265" textAnchor="end" fill="#7dd3fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Roll</text>
+        <path d="M 250 220 a 20 40 1 1 0 1 20" fill="none" stroke="#38bdf8" strokeWidth="2.5" markerEnd="url(#df-B)" opacity="0.85" />
+        <text x="240" y="180" textAnchor="end" fill="#7dd3fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Roll</text>
 
         {/* ── PITCH ── */}
-        <path d="M 390 215 A 24 24 0 0 0 390 253" fill="none" stroke="#f97316" strokeWidth="2.5" markerEnd="url(#df-O)" />
-        <text x="425" y="265" textAnchor="start" fill="#fdba74" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Pitch</text>
+        <path d="M 410 225 a 40 25 1 1 0 20 0" fill="none" stroke="#fdba74" strokeWidth="2.5" markerEnd="url(#df-O)" opacity="0.85" transform="rotate(90 290 215)" />
+        <text x="245" y="410" textAnchor="start" fill="#fdba74" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Pitch</text>
 
         {/* ── YAW ── */}
-        <path d="M 378 195 A 32 32 0 0 0 322 195" fill="none" stroke="#f43f5e" strokeWidth="2.5" markerEnd="url(#df-R)" />
-        <text x="350" y="150" textAnchor="middle" fill="#fb7185" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Yaw</text>
+        <path d="M 363 140 a 40 20 1 1 0 -20 0" fill="none" stroke="#22c55e" strokeWidth="3" markerEnd="url(#df-G)" opacity="0.85" />
+        <text x="280" y="123" textAnchor="middle" fill="#22c55e" fontSize="11" fontWeight="bold" fontFamily="sans-serif">Yaw</text>
 
         <defs>
-            <marker id="df-G" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#22c55e" />
+            <marker id="df-G" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e" />
             </marker>
-            <marker id="df-B" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#38bdf8" />
+            <marker id="df-B" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
             </marker>
-            <marker id="df-O" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#f97316" />
+            <marker id="df-O" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#f97316" />
             </marker>
-            <marker id="df-R" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 L 2 5 z" fill="#f43f5e" />
+            <marker id="df-R" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#f43f5e" />
             </marker>
         </defs>
     </svg>
